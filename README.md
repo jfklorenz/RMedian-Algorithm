@@ -1,4 +1,7 @@
 # Python-RMedian
+
+![GitHub status](https://img.shields.io/badge/status-release-success) ![GitHub top language](https://img.shields.io/github/languages/top/jfklorenz/python-rmedian) ![GitHub last commit](https://img.shields.io/github/last-commit/jfklorenz/python-rmedian) ![GitHub issues](https://img.shields.io/github/issues-raw/jfklorenz/python-rmedian) ![GitHub](https://img.shields.io/github/license/jfklorenz/python-rmedian)
+
 A **Python** implementation of the **RMedian algorithm**.
 
 ---
