@@ -1,8 +1,16 @@
 # Python-RMedian
 
-![GitHub status](https://img.shields.io/badge/status-release-success) ![GitHub top language](https://img.shields.io/github/languages/top/jfklorenz/python-rmedian) ![GitHub last commit](https://img.shields.io/github/last-commit/jfklorenz/python-rmedian) ![GitHub issues](https://img.shields.io/github/issues-raw/jfklorenz/python-rmedian) ![GitHub](https://img.shields.io/github/license/jfklorenz/python-rmedian)
+![GitHub status](https://img.shields.io/badge/status-release-success) ![GitHub top language](https://img.shields.io/github/languages/top/jfklorenz/python-rmedian) ![GitHub last commit](https://img.shields.io/github/last-commit/jfklorenz/python-rmedian) ![GitHub](https://img.shields.io/github/license/jfklorenz/python-rmedian)
 
 A **Python** implementation of the **RMedian algorithm**.
+
+The algorithm is presented in the paper **Fragile Complexity of Comparison-Based Algorithms** by Prof. Dr. Ulrich Meyer and others in 2019.
+
+It introduces the concept of fragile complexity, i.e. the amount of times an element was part of a comparison during the algorithm.
+
+Lets assume a country wants to find its best boxer to represent it during the olypics. If we make a tournament where each loser is eliminated we will evolve with the best boxer, but in a state of exhaustion and maybe even injuries. Therefor it should be the goal to find the best boxer while simultaneously keeping him fit and healthy.
+
+Therefor the RMedian algorithm finds the median element of a given set while being able to control the fragile complexity of its median and other elements with a parameter.
 
 ---
 
