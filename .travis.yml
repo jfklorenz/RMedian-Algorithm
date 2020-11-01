@@ -21,3 +21,10 @@ script:
   - pytest
 after_success:
   - codecov # submit coverage
+
+notifications:
+  email:
+    recipients:
+      - jfk.lorenz@gmail.com
+      on_success: never
+      on_failure: always
