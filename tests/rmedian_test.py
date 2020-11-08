@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 # ==================================================
 """
-File: RMedian - Full Algorithm
+File: RMinimum - PyTest - Full Algorithm
 Author: Julian Lorenz
 """
 # ==================================================
 #   Import
+import pytest
 import math
 import random
 import statistics
@@ -173,5 +174,38 @@ def phase3(X, k, d, L, C, R, cnt, rec, n0):
 
     rec += 1
     return rmedian(C, k, d, cnt, rec, n0)
+
+# ==================================================
+#   Unittest : Parameter
+@pytest.mark.parametrize(('n'), [
+    #   Randomized input
+    random.randint(2**9, 2**15),
+
+    #   Manuel input
+    2**10, 2**12, 2**14, 2**12 + 1, 2**12 - 1
+])
+# ==================================================
+#   Unittest : Test
+def test_algo(n):
+    #   Generating Testcase
+
+    X0 = [i for i in range(n)]
+    k0 = int(n ** (2 / 3))
+    d0 = int(n ** (1 / 12))
+    med0, cnt0, res0, rec0 = rmedian(X0, k0, d0)
+
+    X1 = [i for i in range(n)]
+    k1 = int(n / math.log(n, 2)**(1/3))
+    d1 = int(math.log(n, 2)**(1/3))
+    med1, cnt1, res1, rec1 = rmedian(X1, k1, d1)
+
+    medt0 = statistics.median(X0)
+    medt1 = statistics.median(X1)
+
+    #   Test
+    assert med0 == medt0
+    assert med1 == medt1
+
+    return
 
 # ==================================================

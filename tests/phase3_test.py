@@ -7,8 +7,8 @@ Author: Julian Lorenz
 # ==================================================
 #   Import
 import pytest
-import random
 import math
+import random
 import statistics
 
 # ==================================================

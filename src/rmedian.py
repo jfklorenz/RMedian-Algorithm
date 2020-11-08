@@ -175,3 +175,6 @@ def phase3(X, k, d, L, C, R, cnt, rec, n0):
     return rmedian(C, k, d, cnt, rec, n0)
 
 # ==================================================
+
+X = [i for i in range(1025)]
+print(rmedian(X, 16, 2))
