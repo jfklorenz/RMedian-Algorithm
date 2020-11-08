@@ -10,6 +10,8 @@ It introduces the algorithm *RMedian* and also the concept of *fragile complexit
 
 RMedian is a randomized recursive algorithm that finds the median element of a given total orderer set of elements. The algorithm has a tuning parameter k(n) controlling the trade-pff between the expected fragile complexity f_med(n) of the median element and the maximum expected fragile complexity f_rem(n) of the remaining non-median elements; if n is clear from the context, we use k instead of k(n).
 
+The included paper provides further details regarding the work and fragile complexity of various inputs.
+
 Folder | Content
 --- | ---
 data | all experimental data as *.csv* files
