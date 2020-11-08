@@ -1,6 +1,7 @@
 # RMedian-Algorithm
 
-![GitHub status](https://img.shields.io/badge/status-release-success) ![GitHub top language](https://img.shields.io/github/languages/top/jfklorenz/python-RMedian) ![Travis](https://travis-ci.org/jfklorenz/RMedian-Algorithm.svg?branch=master) ![GitHub](https://img.shields.io/github/license/jfklorenz/python-RMedian)
+![GitHub status](https://img.shields.io/badge/status-release-success) ![GitHub top language](https://img.shields.io/github/languages/top/jfklorenz/python-RMedian) ![Travis](https://travis-ci.org/jfklorenz/RMedian-Algorithm.svg?branch=master)
+[![PyPI version](https://badge.fury.io/py/RMedian-Algorithm.svg)](https://badge.fury.io/py/RMedian-Algorithm) ![Liscence](https://img.shields.io/github/license/jfklorenz/RMedian-Algorithm)
 
 A **Python** implementation of the **RMedian algorithm**.
 
