@@ -8,27 +8,15 @@ The algorithm is presented in the paper **Fragile Complexity of Comparison-Based
 
 It introduces the algorithm *RMedian* and also the concept of *fragile complexity*, i.e. the amount of times an element has been compared during the process of the algorithm.
 
-The package was published on **PyPI** and tested on **Travis CI**.
-
----
+RMedian is a randomized recursive algorithm that finds the median element of a given total orderer set of elements. The algorithm has a tuning parameter k(n) controlling the trade-pff between the expected fragile complexity f_med(n) of the median element and the maximum expected fragile complexity f_rem(n) of the remaining non-median elements; if n is clear from the context, we use k instead of k(n).
 
 Folder | Content
 --- | ---
 data | all experimental data as *.csv* files
-docs | scientific paper presenting the algorithm (old & new version)  |  
+docs | scientific paper presenting the algorithm (old & new version)
 jupyter | *Jupyter Notebook* validation and test files
-poster | design for a poster explaining the algorithm  |  
+poster | design for a poster explaining the algorithm
 src | *Python* source code
 tests | *PyTest* test files
 
----
-
-## Algorithm
-
-
----
-
-## Complexity
-1. *Runtime:* RMedian requires linear work w(n) = O(n).
-2. Let k(n) = n_ε for 0 < ε ≤ 1/2. Then RMedian requires E(f_min(n)) = O(ε−1loglog(n)) comparisons for the minimum and E(f_rem(n)) = O(n_ε) for the remaining elements.
-3. Let k(n) = logn/loglogn. Then RMedian requires E(f_min(n)) = O(log(n)/loglog(n)) comparisons for the minimum and E(f_rem(n)) = O(log(n)/loglog(n)) for the remaining elements.
+The package was published on **PyPI** and tested on **Travis CI**.
